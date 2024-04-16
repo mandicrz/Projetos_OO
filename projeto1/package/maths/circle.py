@@ -5,6 +5,7 @@ class Circle (BasicOperations):
     def __init__(self, raio, center):
         self._raio = raio
         self._center = center
+        
     def diameter_calculator (self):
         diameter = self._raio * 2
         return diameter
@@ -21,5 +22,4 @@ class Circle (BasicOperations):
         distancia_centro_ponto = math.sqrt((point.x - self._center.x) ** 2 + (point.y - self._center.y) ** 2)
         
         return distancia_centro_ponto <= self._raio
-    
     

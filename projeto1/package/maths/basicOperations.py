@@ -9,6 +9,9 @@ class BasicOperations:
     def perimeter_calculator(self):
         pass
     
+    def diagonal_calculator(self):
+        pass
+
     def sum_intern_angles(self, n):
         self._n = n
         sum = (self._n - 2) * 180

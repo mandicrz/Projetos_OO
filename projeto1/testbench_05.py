@@ -1,15 +1,15 @@
 from package.maths.square import Square
 
-# Criando um objeto Square com lado igual a 5
-quadrado = Square (int(input("Digite o lado do quadrado")))
+quadrado = Square (int(input("Digite o lado do quadrado: ")))
 
-# Calculando e imprimindo a área do quadrado
-print("Área do quadrado:", quadrado.area_calculator())
+area = quadrado.area_calculator()
+print("Área do quadrado:", area)
 
-# Calculando e imprimindo o perímetro do quadrado
-print("Perímetro do quadrado:", quadrado.perimeter_calculator())
+perimetro = quadrado.perimeter_calculator()
+print("Perímetro do quadrado:", perimetro)
 
-# Calculando e imprimindo a diagonal do quadrado
-print("Diagonal do quadrado:", quadrado.diagonal_calculator())
+diagonal = quadrado.diagonal_calculator()
+print("Diagonal do quadrado:", diagonal)
 
-print("Soma dos angulos internos e", quadrado.sum_intern_angles())
+soma_angulos = quadrado.sum_intern_angles(4)
+print("A soma dos angulos internos e de:", soma_angulos)

@@ -7,14 +7,20 @@ ponto2 = Point(4, 4)
 segmento = LineSegment(ponto1, ponto2)
 
 # Calculando a distância entre um ponto e o segmento
-ponto_teste = Point(3, 2)  # Exemplo de ponto (3, 2)
-distancia = segmento.distance_point_segment_calculator(ponto_teste)
-esta_proximo = segmento.close_point(ponto_teste)
+ponto_exemplo = Point(3, 2)
+distancia = segmento.distance_point_segment_calculator(ponto_exemplo)
+
+# verificando se está próximo ou não
+esta_proximo = segmento.close_point(ponto_exemplo)
 
 # Calculando o ponto médio do segmento
 ponto_medio = segmento.mid_point()
 
 # Imprimindo os resultados
-print("Distância entre o ponto (3, 2) e o segmento:", distancia)
+print(f"O ponto 1 é: ({ponto1.x}, {ponto1.y})")
+print(f"O ponto 2 é: ({ponto2.x}, {ponto2.y})")
+print(f"O ponto 1 e 2 formam o segmento: ({ponto1.x}, {ponto1.y}) e ({ponto2.x}, {ponto2.y})")
 print("Ponto médio do segmento:", ponto_medio)
-print("O ponto está próximo do segmento:", esta_proximo)
+print(f"O ponto exemplo é: ({ponto_exemplo.x}, {ponto_exemplo.y})")
+print("Distância entre o ponto exemplo e o segmento:", distancia)
+print("O ponto escolhido está próximo do segmento?",  esta_proximo)
