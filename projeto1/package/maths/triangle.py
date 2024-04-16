@@ -26,3 +26,5 @@ class Triangle(BasicOperations):
     
     def sum_intern_angles(self, n):
         return super().sum_intern_angles(n)
+    
+    # pensar sobre um metodo que informe se o triangulo exista ou nao, caso nao exista, repetir as informaçoes
