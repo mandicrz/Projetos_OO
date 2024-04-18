@@ -1,4 +1,4 @@
-from package.maths.square import Square
+from package.maths_bidimensional.square import Square
 
 quadrado = Square (int(input("Digite o lado do quadrado: ")))
 

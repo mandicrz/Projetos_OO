@@ -1,4 +1,4 @@
-from package.maths.rectangle import Rectangle
+from package.maths_bidimensional.rectangle import Rectangle
 
 base = 4
 height = 5

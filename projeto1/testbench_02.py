@@ -1,5 +1,5 @@
-from package.maths.lineSegment import LineSegment
-from package.maths.point import Point
+from package.maths_bidimensional.lineSegment import LineSegment
+from package.maths_bidimensional.point import Point
 
 # Instanciando um segmento de reta
 ponto1 = Point(1, 1)

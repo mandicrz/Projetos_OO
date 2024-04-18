@@ -1,4 +1,4 @@
-from package.maths.triangle import Triangle
+from package.maths_bidimensional.triangle import Triangle
 
 base = 3
 height = 6
@@ -8,6 +8,7 @@ c = 3
 
 triangulo = Triangle(base, height, a, b, c)
 
+existencia = triangulo.triangle_exists()
 forma_triangulo = triangulo.type_of_triangle()
 area = triangulo.area_calculator()
 perimetro = triangulo.perimeter_calculator()
@@ -20,3 +21,4 @@ print(f"O lado B é: ", b)
 print(f"O lado C é: ", c)
 print(f"O tipo do triangulo com base em sua forma é: ", forma_triangulo)
 print(f"A soma dos seus angulos internos e: ", soma_angulos)
+print(f"O triangulo existe?: {existencia}")

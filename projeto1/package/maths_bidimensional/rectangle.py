@@ -1,4 +1,4 @@
-from package.maths.basicOperations import BasicOperations
+from package.maths_bidimensional.basicOperations import BasicOperations
 
 class Rectangle(BasicOperations):
     def __init__(self, base, height):
@@ -18,4 +18,5 @@ class Rectangle(BasicOperations):
         return diagonal
     
     def sum_intern_angles(self, n):
+        n = 4
         return super().sum_intern_angles(n)

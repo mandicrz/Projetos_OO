@@ -1,4 +1,4 @@
-from package.maths.basicOperations import BasicOperations
+from package.maths_bidimensional.basicOperations import BasicOperations
 
 class Triangle(BasicOperations):
     def __init__(self, base, height, a, b, c):
@@ -7,7 +7,14 @@ class Triangle(BasicOperations):
         self._a = a
         self._b = b
         self._c = c
+
     
+    def triangle_exists (self): 
+        if (self._a + self._b > self._c) or (self._a + self._c > self._b) or (self._b + self._c > self._a):
+            return True
+        else:
+            return False
+        
     def type_of_triangle (self):
         if self._a == self._b == self._c:
             return f"Triangulo Equilatero"
@@ -25,6 +32,7 @@ class Triangle(BasicOperations):
         return perimeter
     
     def sum_intern_angles(self, n):
+        n = 3
         return super().sum_intern_angles(n)
     
     # pensar sobre um metodo que informe se o triangulo exista ou nao, caso nao exista, repetir as informaçoes

@@ -1,5 +1,5 @@
-from package.maths.point import Point
-from package.maths.circle import Circle
+from package.maths_bidimensional.point import Point
+from package.maths_bidimensional.circle import Circle
 
 # Instanciando um círculo
 

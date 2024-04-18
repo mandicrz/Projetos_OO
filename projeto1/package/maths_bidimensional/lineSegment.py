@@ -12,6 +12,7 @@ class LineSegment:
         
         return distancia_ponto_segmento <= tolerance * distancia_pontos_segmento
 
+        
     def distance_point_segment_calculator(self, point):
         x1, y1 = self._point1.x, self._point1.y
         x2, y2 = self._point2.x, self._point2.y
@@ -26,4 +27,4 @@ class LineSegment:
         x_media = (self._point1.x + self._point2.x) / 2
         y_media = (self._point1.y + self._point2.y) / 2
         
-        return f"O ponto medio do segmento e: ({x_media}, {y_media})"
+        return f"({x_media}, {y_media})"

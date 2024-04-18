@@ -1,4 +1,4 @@
-from package.maths.basicOperations import BasicOperations
+from package.maths_bidimensional.basicOperations import BasicOperations
 import math
 
 class Circle (BasicOperations):
