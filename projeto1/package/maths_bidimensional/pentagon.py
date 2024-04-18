@@ -1,21 +1,16 @@
 from package.maths_bidimensional.basicOperations import BasicOperations
+import math
 
-class Square(BasicOperations):
+class Pentagon(BasicOperations):
     def __init__(self, lado):
         self._lado = lado
     
     def area_calculator(self):
-        area = self._lado ** 2
-        return area
+        return (5 * self._lado ** 2) / (4 * math.tan(math.pi / 5))
         
     def perimeter_calculator(self):
-        perimeter = self._lado * 4
+        perimeter = 5 * self._lado
         return perimeter
-    
-    def diagonal_calculator(self):
-        diagonal = self._lado * (2 ** 0.5)
-        return diagonal
     
     def sum_intern_angles(self, n):
         return super().sum_intern_angles(n)
-    

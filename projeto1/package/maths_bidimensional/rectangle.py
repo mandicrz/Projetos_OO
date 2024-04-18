@@ -18,5 +18,4 @@ class Rectangle(BasicOperations):
         return diagonal
     
     def sum_intern_angles(self, n):
-        n = 4
         return super().sum_intern_angles(n)
