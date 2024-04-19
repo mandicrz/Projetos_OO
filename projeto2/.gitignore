@@ -1,0 +1,14 @@
+__pycache__/
+venv/
+env/
+*.env
+*.log
+.vscode/
+.idea/
+/requirements.txt
+/requirements-dev.txt
+/build/
+/dist/
+/.vscode/
+/.idea/
+*.iml
