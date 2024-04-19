@@ -10,18 +10,18 @@ class Triangle(BasicOperations):
 
     
     def triangle_exists (self): 
-        if (self._a + self._b > self._c) or (self._a + self._c > self._b) or (self._b + self._c > self._a):
+        if (self._a + self._b > self._c) and (self._a + self._c > self._b) and (self._b + self._c > self._a):
             return True
         else:
             return False
         
     def type_of_triangle (self):
         if self._a == self._b == self._c:
-            return f"Triangulo Equilatero"
+            return f"Triângulo Equilátero"
         elif self._a == self._b or self._a == self._c or self._b == self._c:
-            return f"Triangulo Isosceles"
+            return f"Triângulo Isósceles"
         else:
-            return f"Triangulo Escaleno"
+            return f"Triângulo Escaleno"
         
     def area_calculator(self):
         area = (self._base * self._height) / 2
@@ -34,4 +34,4 @@ class Triangle(BasicOperations):
     def sum_intern_angles(self, n):
         return super().sum_intern_angles(n)
     
-    # pensar sobre um metodo que informe se o triangulo exista ou nao, caso nao exista, repetir as informaçoes
+   
