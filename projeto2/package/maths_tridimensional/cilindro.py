@@ -12,9 +12,8 @@ class Cilindro(commonOperations):
     def area_lateral(self):
         return 2*3.14*self._raio*self._altura
     
-    def area_total_calculator(self):
-        areaTotal = self.area_lateral() + 2*(self.area_base())
-        return areaTotal
+    def area_total(self):
+        return self.area_lateral() + 2*(self.area_base())
         
     def volume(self):
         return 3.14*(self._raio)**2 * self._altura
