@@ -107,7 +107,7 @@ def main():
                                 ponto3 = Point(x3, y3)
                                 
                                 if segmento.close_point(ponto3):
-                                    print(f"O ponto ({ponto3.x}, {ponto3.y}) está perto do segmento!)")
+                                    print(f"O ponto ({ponto3.x}, {ponto3.y}) está perto do segmento!")
                                     
                                 else:
                                     print(f"O ponto ({ponto3.x}, {ponto3.y}) não está perto do segmento!")
@@ -145,7 +145,7 @@ def main():
                     while True:
                         print("Você escolheu criar um círculo! Digite o raio e o centro (x e y separados por vírgula) do mesmo (separados por enter):")
                         
-                        raio = input("Raio: ")
+                        raio = float(input("Raio: "))
                         circle = input("Centro: ").split(",")
                         x = float(circle[0])
                         y = float(circle[1])
@@ -602,6 +602,7 @@ def main():
                         altura = float(input("Altura: "))
                         base = float(input("Base: "))
                         n_lados = float(input("Número de lados: "))
+                        
                         
                         print("Escolha a base de acordo com a pirâmide que deseja criar: ")
                         print("|1|. Triangular")
