@@ -369,7 +369,6 @@ def main():
                                 
                                 else:
                                     print("Valor incorreto!")
-                                    break
                                     
                             break
                         else:
@@ -604,7 +603,7 @@ def main():
                         base = float(input("Base: "))
                         n_lados = float(input("Número de lados: "))
                         
-                        
+                         
                         print("Escolha a base de acordo com a pirâmide que deseja criar: ")
                         print("|1|. Triangular")
                         print("|2|. Quadrangular")
@@ -636,7 +635,8 @@ def main():
                         
                         else:
                             print("Valor incorreto!")
-                          
+                            break
+                        
                         while True:   
                             print("Escolha entre as opções a seguir: ")
                             print("|1|. Área da Base")
@@ -660,8 +660,9 @@ def main():
                             
                             else:
                                 print("Valor incorreto!")
-                           
+                        
                         break
+                        
                     
                 elif option3 == "7":
                     break
