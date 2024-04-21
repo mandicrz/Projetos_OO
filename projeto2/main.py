@@ -369,6 +369,7 @@ def main():
                                 
                                 else:
                                     print("Valor incorreto!")
+                                    break
                                     
                             break
                         else:
