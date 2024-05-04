@@ -4,6 +4,7 @@ from package.maths_tridimensional import *
 def main():
     while True: 
         print("Bem vindo(a), esse é um programa para criar figuras geométricas. Escolha qual quer formar: ")
+        print("Atente-se: A medida de grandeza das formas está definida em metros, metros quadrados(áreas) e metros cúbicos(volume)!")
 
         print("|1|. Figuras Adimensionais")
         print("|2|. Figuras Bidimensionais")
@@ -164,15 +165,15 @@ def main():
                             option2_1 = input()
                             
                             if option2_1 == "1":
-                                print(f"O diâmetro do círculo de raio {raio} é: {circulo.diameter_calculator()}")
+                                print(f"O diâmetro do círculo de raio é: {circulo.diameter_calculator()}")
                                 
                                 
                             elif option2_1 == "2":
-                                print(f"A área do círculo de raio {raio} é: {circulo.area_calculator()}")
+                                print(f"A área do círculo de raio é: {circulo.area_calculator()}")
                                 
                                 
                             elif option2_1 == "3":
-                                print(f"O perímetro do círculo de raio {raio} é: {circulo.perimeter_calculator()}")
+                                print(f"O perímetro do círculo de raio é: {circulo.perimeter_calculator()}")
                                 
                             elif option2_1 == "4":
                                 print("Digite o ponto que quer verificar (x e y separados por vírgula): ")
@@ -379,6 +380,7 @@ def main():
                 
                 else:
                     print("Valor incorreto!")    
+            
                               
         elif option == "3":
             while True:
@@ -597,72 +599,66 @@ def main():
                 
                 elif option3 == "6":
                     while True:
-                        print("Você escolheu criar uma pirâmide, digite as medidas da altura e da base e o número de lados da mesma (separadas por enter):")
+                        print("Você escolheu criar uma pirâmide, digite as medidas da altura e da base e o número de lados da mesma, de 3 a 6 (separadas por enter):")
                         
                         altura = float(input("Altura: "))
                         base = float(input("Base: "))
-                        n_lados = float(input("Número de lados: "))
-                        
-                         
-                        print("Escolha a base de acordo com a pirâmide que deseja criar: ")
-                        print("|1|. Triangular")
-                        print("|2|. Quadrangular")
-                        print("|3|. Pentagonal")
-                        print("|4|. Hexagonal")
-                        
-                        tipo_base = float(input("Tipo da base: "))
-                        
-                        if tipo_base == 1:
-                            altura_base = float(input("Digite o valor da altura da base: "))
-                            piramide = Piramide(altura, base, n_lados, tipo_base, altura_base)
-                            triangulo1 = Triangle(base, altura_base, 0, 0, 0)
-                            area_base = triangulo1.area_calculator()
-                        
-                        elif tipo_base == 2:
-                            piramide = Piramide(altura, base, n_lados, tipo_base, 0)
-                            quadrado1 = Square(base)
-                            area_base = quadrado1.area_calculator()
+
+                        while True:
+                            n_lados = float(input("Número de lados: "))
                             
-                        elif tipo_base == 3:
-                            piramide = Piramide(altura, base, n_lados, tipo_base, 0)
-                            hexagono1 = Hexagon(base)
-                            area_base = hexagono1.area_calculator()
+                            if n_lados == 3:
+                                altura_base = float(input("Digite o valor da altura da base: "))
+                                piramide = Piramide(altura, base, n_lados, altura_base)
+                                triangulo1 = Triangle(base, altura_base, 0, 0, 0)
+                                area_base = triangulo1.area_calculator()
                             
-                        elif tipo_base == 4:
-                            piramide = Piramide(altura, base, n_lados, tipo_base, 0)
-                            pentagono1 = Pentagon(base)   
-                            area_base = pentagono1.area_calculator() 
-                        
-                        else:
-                            print("Valor incorreto!")
-                            break
-                        
-                        while True:   
-                            print("Escolha entre as opções a seguir: ")
-                            print("|1|. Área da Base")
-                            print("|2|. Área Lateral")
-                            print("|3|. Área Total")
-                            print("|4|. Volume")
-                            print("|5|. Voltar")
-                            
-                            option3_6 = input()
-                            
-                            if option3_6 == "1":
-                                print(f"A área da base da pirâmide é: {area_base}")
-                            elif option3_6 == "2":
-                                print(f"A área lateral da pirâmide é: {piramide.area_lateral()}")
-                            elif option3_6 == "3":
-                                print(f"A área total da pirâmide é: {piramide.area_total()}")
-                            elif option3_6 == "4":
-                                print(f"O volume da pirâmide é: {piramide.volume()}")
-                            elif option3_6 == "5":
-                                break
+                            elif n_lados == 4:
+                                piramide = Piramide(altura, base, n_lados, 0)
+                                quadrado1 = Square(base)
+                                area_base = quadrado1.area_calculator()
+                                
+                            elif n_lados == 5:
+                                piramide = Piramide(altura, base, n_lados, 0)
+                                hexagono1 = Hexagon(base)
+                                area_base = hexagono1.area_calculator()
+                                
+                            elif n_lados == 6:
+                                piramide = Piramide(altura, base, n_lados, 0)
+                                pentagono1 = Pentagon(base)   
+                                area_base = pentagono1.area_calculator() 
                             
                             else:
                                 print("Valor incorreto!")
+                                break
                         
+                            while True:   
+                                print("Escolha entre as opções a seguir: ")
+                                print("|1|. Área da Base")
+                                print("|2|. Área Lateral")
+                                print("|3|. Área Total")
+                                print("|4|. Volume")
+                                print("|5|. Voltar")
+                                
+                                option3_6 = input()
+                                
+                                if option3_6 == "1":
+                                    print(f"A área da base da pirâmide é: {area_base}")
+                                elif option3_6 == "2":
+                                    print(f"A área lateral da pirâmide é: {piramide.area_lateral()}")
+                                elif option3_6 == "3":
+                                    print(f"A área total da pirâmide é: {piramide.area_total()}")
+                                elif option3_6 == "4":
+                                    print(f"O volume da pirâmide é: {piramide.volume()}")
+                                elif option3_6 == "5":
+                                    break
+                                
+                                else:
+                                    print("Valor incorreto!")
+                                    
+                                    
+                            break
                         break
-                        
                     
                 elif option3 == "7":
                     break

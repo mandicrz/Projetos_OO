@@ -16,5 +16,4 @@ class BasicOperations:
         self._n = n
         sum = (self._n - 2) * 180
         return sum
-
     
