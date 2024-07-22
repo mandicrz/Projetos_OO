@@ -1,6 +1,6 @@
-from package.maths_tridimensional.commonOperations import commonOperations
+from package.maths_tridimensional.commonOperations import CommonOperations
 
-class Paralelepipedo(commonOperations):
+class Paralelepipedo(CommonOperations):
     
     def __init__(self, a, b, c):
         self._a = a

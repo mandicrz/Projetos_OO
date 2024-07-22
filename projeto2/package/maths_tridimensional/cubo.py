@@ -1,6 +1,6 @@
-from package.maths_tridimensional.commonOperations import commonOperations
+from package.maths_tridimensional.commonOperations import CommonOperations
 
-class Cubo(commonOperations):
+class Cubo(CommonOperations):
     
     def __init__(self, aresta):
         self._aresta = aresta

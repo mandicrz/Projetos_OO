@@ -1,6 +1,6 @@
-from package.maths_tridimensional.commonOperations import commonOperations
+from package.maths_tridimensional.commonOperations import CommonOperations
 from package.maths_bidimensional.circle import Circle
-class Esfera(commonOperations):
+class Esfera(CommonOperations):
     
     def __init__(self, raio):
         self._raio = raio

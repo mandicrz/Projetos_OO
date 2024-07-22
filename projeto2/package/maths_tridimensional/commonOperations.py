@@ -1,4 +1,4 @@
-class commonOperations:
+class CommonOperations:
     
     def __init__(self):
         pass

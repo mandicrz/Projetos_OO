@@ -1,6 +1,6 @@
-from package.maths_tridimensional.commonOperations import commonOperations
+from package.maths_tridimensional.commonOperations import CommonOperations
 
-class Cone(commonOperations):
+class Cone(CommonOperations):
     
     def __init__(self, raio, altura):
         self._raio = raio

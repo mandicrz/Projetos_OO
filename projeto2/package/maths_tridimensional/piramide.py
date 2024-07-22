@@ -1,10 +1,10 @@
-from package.maths_tridimensional.commonOperations import commonOperations
+from package.maths_tridimensional.commonOperations import CommonOperations
 from package.maths_bidimensional.triangle import Triangle
 from package.maths_bidimensional.square import Square
 from package.maths_bidimensional.pentagon import Pentagon
 from package.maths_bidimensional.hexagon import Hexagon
 
-class Piramide(commonOperations):
+class Piramide(CommonOperations):
     
     def __init__(self, altura, base, n_lados, altura_base):
         self._altura = altura
